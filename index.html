@@ -2,83 +2,94 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/napizza-project/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>naPizza. - №1 in Kyiv</title>
+
+    <link rel="icon" href="/napizza-project/assets/logo-9975bbd0.png" />
     
-    <script type="module" crossorigin src="/napizza-project/assets/index-c45ada6b.js"></script>
-    <link rel="stylesheet" href="/napizza-project/assets/index-10c40100.css">
+    <script type="module" crossorigin src="/napizza-project/assets/index-0ff52512.js"></script>
+    <link rel="stylesheet" href="/napizza-project/assets/index-31af7165.css">
   </head>
   <body>
     <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
+  <div class="header-container container">
+    <div class="mob-col-1">
+      <button class="hamburger-menu" id="hamburger-menu">
+        <div class="bar"></div>
+      </button>
+    </div>
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
-</header>
+    <div class="mob-col-2">
+      <a href="/index.html" class="header-logo">naPizza.</a>
+    </div>
 
+    <div class="header-nav-container mobile-nav active">
+      <nav class="header-nav">
+        <ul class="header-nav-list list">
+          <li class="header-nav-item item">
+            <a class="header-nav-link link" id="home" data-name="home">home</a>
+          </li>
+          <li class="header-nav-item item">
+            <a class="header-nav-link link" id="about-btn" data-name="about">about</a>
+          </li>
+          <li class="header-nav-item item">
+            <a class="header-nav-link link" id="menu-btn" data-name="menu">menu</a>
+          </li>
+          <li class="header-nav-item item">
+            <a class="header-nav-link link" id="order-btn" data-name="make-your-pizza"
+              >design pizza</a
+            >
+          </li>
+          <li class="header-nav-item item">
+            <a class="header-nav-link link" id="faq-btn" data-name="faq">faq</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/napizza-project/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
+    <div class="mob-col-3">
+      <ul class="header-icon-list list">
+        <li class="header-icon-item item">
+          <button class="button">
+            <svg class="user-login-icon icon" width="20" height="20">
+              <use href="../img/symbol-defs.svg#user"></use>
+            </svg>
+          </button>
         </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
+        <li class="header-icon-item item">
+          <button class="button">
+            <svg class="box-icon icon" width="20" height="20">
+              <use href="../img/symbol-defs.svg#box"></use>
+            </svg>
+          </button>
+        </li>
+        <li class="header-icon-item item">
+          <button class="button" id="open-cart-btn">
+            <svg class="shopping-cart-icon icon" width="20" height="20">
+              <use href="../img/symbol-defs.svg#cart-shopping"></use>
+            </svg>
+            <span class="quantity"></span>
+          </button>
         </li>
       </ul>
     </div>
-
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/napizza-project/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
-    </div>
   </div>
-</section>
 
+  <div class="cart" id="cart">
+    <div class="close-cart">
+      <button id="close-cart-btn">close</button>
+    </div>
+    <div class="cart-is-empty"></div>
+    <div class="cart-list">
+      <!-- dynamic data here -->
+    </div>
+    <div class="subtotal">Total: <span class="show-subtotal"></span></div>
+    <a href="./complete-order.html" id="order-now-btn">Order Now</a>
+  </div>
+</header>
+
+    <!-- Loads the specified .html file -->
 
     
   </body>
