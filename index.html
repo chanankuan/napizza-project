@@ -8,14 +8,19 @@
 
     <link rel="icon" href="/napizza-project/assets/logo-9975bbd0.png" />
     
-    <script type="module" crossorigin src="/napizza-project/assets/index-0ff52512.js"></script>
-    <link rel="stylesheet" href="/napizza-project/assets/index-31af7165.css">
+    <script type="module" crossorigin src="/napizza-project/assets/index-a6f6e1c2.js"></script>
+    <link rel="stylesheet" href="/napizza-project/assets/index-ecfbeaba.css">
   </head>
   <body>
     <header class="header">
   <div class="header-container container">
     <div class="mob-col-1">
-      <button class="hamburger-menu" id="hamburger-menu">
+      <button
+        type="button"
+        class="js-toggle-menu hamburger-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
         <div class="bar"></div>
       </button>
     </div>
@@ -24,25 +29,41 @@
       <a href="/index.html" class="header-logo">naPizza.</a>
     </div>
 
-    <div class="header-nav-container mobile-nav active">
+    <div class="header-nav-container mobile-nav js-menu-container">
       <nav class="header-nav">
         <ul class="header-nav-list list">
           <li class="header-nav-item item">
-            <a class="header-nav-link link" id="home" data-name="home">home</a>
+            <a class="header-nav-link link" href="javascript:void(0)" id="home" data-name="home"
+              >home</a
+            >
           </li>
           <li class="header-nav-item item">
-            <a class="header-nav-link link" id="about-btn" data-name="about">about</a>
+            <a
+              class="header-nav-link link"
+              href="javascript:void(0)"
+              id="about-btn"
+              data-name="about"
+              >about</a
+            >
           </li>
           <li class="header-nav-item item">
-            <a class="header-nav-link link" id="menu-btn" data-name="menu">menu</a>
+            <a class="header-nav-link link" href="javascript:void(0)" id="menu-btn" data-name="menu"
+              >menu</a
+            >
           </li>
           <li class="header-nav-item item">
-            <a class="header-nav-link link" id="order-btn" data-name="make-your-pizza"
+            <a
+              class="header-nav-link link"
+              href="javascript:void(0)"
+              id="order-btn"
+              data-name="make-your-pizza"
               >design pizza</a
             >
           </li>
           <li class="header-nav-item item">
-            <a class="header-nav-link link" id="faq-btn" data-name="faq">faq</a>
+            <a class="header-nav-link link" href="javascript:void(0)" id="faq-btn" data-name="faq"
+              >faq</a
+            >
           </li>
         </ul>
       </nav>
@@ -90,6 +111,71 @@
 </header>
 
     <!-- Loads the specified .html file -->
+    <main>
+      <section class="home" id="home">
+  <div class="container home-bg">
+    <ul class="swiper">
+      <li class="swiper-slide active">
+        <div class="swiper-slide-image-wrapper">
+          <img src="/napizza-project/assets/pizza-10-caa11414.png" alt="Homemade Pepperoni Pizza" />
+        </div>
+        <div class="swiper-slide-content">
+          <h3 class="description">Homemade Pepperoni Pizza</h3>
+          <button class="swiper-button-prev">
+            <svg class="chevron-icon icon" width="22" height="22">
+              <use href="../img/symbol-defs.svg#chevron-left"></use>
+            </svg>
+          </button>
+          <button class="swiper-button-next">
+            <svg class="chevron-icon icon" width="22" height="22">
+              <use href="../img/symbol-defs.svg#chevron-right"></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+
+      <li class="swiper-slide">
+        <div class="swiper-slide-image-wrapper">
+          <img src="/napizza-project/assets/pizza-11-e53daa4f.png" alt="Pizza With Mushrooms" />
+        </div>
+        <div class="swiper-slide-content">
+          <h3 class="description">Pizza With Mushrooms</h3>
+          <button class="swiper-button-prev">
+            <svg class="chevron-icon icon" width="22" height="22">
+              <use href="../img/symbol-defs.svg#chevron-left"></use>
+            </svg>
+          </button>
+          <button class="swiper-button-next">
+            <svg class="chevron-icon icon" width="22" height="22">
+              <use href="../img/symbol-defs.svg#chevron-right"></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+
+      <li class="swiper-slide">
+        <div class="swiper-slide-image-wrapper">
+          <img src="/napizza-project/assets/pizza-12-1f62e0db.png" alt="Mascarpone And Mushrooms Pizza" />
+        </div>
+        <div class="swiper-slide-content">
+          <h3 class="description">Mascarpone And Mushrooms</h3>
+          <button class="swiper-button-prev">
+            <svg class="chevron-icon icon" width="22" height="22">
+              <use href="../img/symbol-defs.svg#chevron-left"></use>
+            </svg>
+          </button>
+          <button class="swiper-button-next">
+            <svg class="chevron-icon icon" width="22" height="22">
+              <use href="../img/symbol-defs.svg#chevron-right"></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    </main>
 
     
   </body>
