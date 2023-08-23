@@ -1,6 +1,5 @@
 (() => {
-  const slides = document.querySelectorAll(".home__slide");
-  const slideImages = document.querySelectorAll(".home__slide-image");
+  const slides = document.querySelectorAll(".swiper-slide");
   const prevSlideBtns = document.querySelectorAll(".swiper-button-prev");
   const nextSlideBtns = document.querySelectorAll(".swiper-button-next");
 
