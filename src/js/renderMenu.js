@@ -1,40 +1,46 @@
-import { pizzaList } from '../data/pizzaAssort'
+import { pizzaList } from '../data/pizzaAssort';
 
 const pickSize = (id, size, price) => {
-  const pickSizeBtns = document.querySelectorAll(".card-btn-group");
-  const priceElements = document.querySelectorAll(".card-price span");
+  const pickSizeBtns = document.querySelectorAll('.card-btn-group');
+  const priceElements = document.querySelectorAll('.card-price span');
 
-  if (size === "standard") {
-    pickSizeBtns[id].firstElementChild.classList.add("active");
-    pickSizeBtns[id].lastElementChild.classList.remove("active");
+  if (size === 'standard') {
+    pickSizeBtns[id].firstElementChild.classList.add('active');
+    pickSizeBtns[id].lastElementChild.classList.remove('active');
     priceElements[id].innerHTML = price;
   }
 
-  if (size === "large") {
-    pickSizeBtns[id].lastElementChild.classList.add("active");
-    pickSizeBtns[id].firstElementChild.classList.remove("active");
+  if (size === 'large') {
+    pickSizeBtns[id].lastElementChild.classList.add('active');
+    pickSizeBtns[id].firstElementChild.classList.remove('active');
     priceElements[id].innerHTML = price;
   }
 
   renderMenu();
-}
+};
 
 // Render main menu
 const renderMenu = () => {
-  const path = "./img/";
+  const path = '/img/';
 
   pizzas.forEach(pizza => {
-    const menuBox = document.querySelector(".menu-card-list");
-    const newLi = document.createElement("li");
-    const { id, name, price: { standard, large }, image, ingredients } = pizza;
+    const menuBox = document.querySelector('.menu-card-list');
+    const newLi = document.createElement('li');
+    const {
+      id,
+      name,
+      price: { standard, large },
+      image,
+      ingredients,
+    } = pizza;
     let currentPrice = standard;
 
-    newLi.classList.add("card-item");
+    newLi.classList.add('card-item');
     newLi.innerHTML = `
         <div class="card-price"><span>${currentPrice}</span> UAH</div>
         <img class="card-image" src="${path + image}" alt="${name}">
         <h3 class="card-title">${name}</h3>
-        <p class="card-text">${ingredients.join(", ")}</p>
+        <p class="card-text">${ingredients.join(', ')}</p>
         <div class="card-btn-group btn-group-${id}">
           <button
             type="button"
@@ -63,7 +69,7 @@ const renderMenu = () => {
 
     menuBox.appendChild(newLi);
   });
-}
+};
 
 const pizzas = [...pizzaList];
 
@@ -76,6 +82,6 @@ renderMenu();
     const price = button.dataset.price;
     const id = button.dataset.id;
 
-    button.addEventListener('click', () => pickSize(id - 1, size, price))
-  })
+    button.addEventListener('click', () => pickSize(id - 1, size, price));
+  });
 })();
