@@ -21,8 +21,6 @@ const pickSize = (id, size, price) => {
 
 // Render main menu
 const renderMenu = () => {
-  const path = '/img/';
-
   pizzas.forEach(pizza => {
     const menuBox = document.querySelector('.menu-card-list');
     const newLi = document.createElement('li');
@@ -33,11 +31,12 @@ const renderMenu = () => {
       image,
       ingredients,
     } = pizza;
+    const path = import.meta.env.BASE_URL + image;
     let currentPrice = standard;
 
     newLi.classList.add('card-item');
     newLi.innerHTML = `
-        <div class="card-price"><span>${currentPrice}</span> UAH</div>
+      <div class="card-price"><span>${currentPrice}</span> UAH</div>
         <img class="card-image" src="${path + image}" alt="${name}">
         <h3 class="card-title">${name}</h3>
         <p class="card-text">${ingredients.join(', ')}</p>
