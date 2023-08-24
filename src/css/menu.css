@@ -1,0 +1,97 @@
+.menu .card-item {
+  position: relative;
+  border: 1px solid var(--primary-light-bg);
+  margin-bottom: 24px;
+  transition: transform var(--tran-250);
+}
+
+.menu .card-item:hover {
+  box-shadow: var(--hover-box-shadow);
+  transform: scale(1.01);
+}
+
+.menu .card-price {
+  font-size: 12px;
+  color: var(--white);
+  padding: 4px 8px;
+  background-color: var(--black);
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+}
+
+.menu .card-price span {
+  font-size: 18px;
+}
+
+.menu .card-title {
+  font-size: 20px;
+  margin-bottom: 16px;
+  min-height: 48px;
+}
+
+.menu .card-text {
+  font-size: 12px;
+  text-transform: capitalize;
+  margin-bottom: 16px;
+}
+
+.card-btn-group {
+  display: flex;
+  gap: 24px;
+}
+
+.card-btn-group .size-btn {
+  margin-bottom: 16px;
+  font-size: 12px;
+  color: var(--primary-light-color);
+  width: 50%;
+  padding: 12px 0px;
+  background-color: transparent;
+  border: 1px solid var(--primary-light-color);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-btn-group .size-btn.active {
+  color: var(--white);
+  background-color: var(--primary-light-color);
+}
+
+.add-to-cart-btn {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 0px;
+  /* margin-top:; */
+  font-size: 16px;
+  color: var(--white);
+  line-height: 130%;
+  text-transform: capitalize;
+  background-color: var(--primary-red);
+  cursor: pointer;
+  transition: background-color var(--tran-250);
+}
+
+.add-to-cart-btn:hover {
+  background-color: var(--black);
+}
+
+
+
+
+
+.menu__box .btn-group .size-btn.active {
+  color: var(--white);
+  background-color: var(--light-color);
+}
+
+
+.menu__box-heading {
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: var(--black);
+  margin-bottom: 1.5rem;
+}
