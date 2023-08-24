@@ -1,7 +1,7 @@
-export const pizzas = [
+export const pizzaList = [
   {
     id: 1,
-    name: "pizza 1",
+    name: "Pizza with Cheese and Basil",
     price: {
       standard: 295,
       large: 342,
@@ -11,7 +11,7 @@ export const pizzas = [
   },
   {
     id: 2,
-    name: "pizza 2",
+    name: "Supreme",
     price: {
       standard: 290,
       large: 338,
@@ -21,7 +21,7 @@ export const pizzas = [
   },
   {
     id: 3,
-    name: "pizza 3",
+    name: "Margherita Pizza",
     price: {
       standard: 300,
       large: 345,
@@ -31,7 +31,7 @@ export const pizzas = [
   },
   {
     id: 4,
-    name: "pizza 4",
+    name: "Pizza with mashrooms and tomatoes",
     price: {
       standard: 300,
       large: 343,
@@ -41,7 +41,7 @@ export const pizzas = [
   },
   {
     id: 5,
-    name: "pizza 5",
+    name: "Veggie Lover's",
     price: {
       standard: 231,
       large: 274,
@@ -61,7 +61,7 @@ export const pizzas = [
   },
   {
     id: 7,
-    name: "pizza 7",
+    name: "White Pizza (Ricotta and Mozzarella)",
     price: {
       standard: 266,
       large: 316,
@@ -71,7 +71,7 @@ export const pizzas = [
   },
   {
     id: 8,
-    name: "pizza 8",
+    name: "Mushroom and Olive",
     price: {
       standard: 286,
       large: 336,
