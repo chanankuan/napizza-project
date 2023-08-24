@@ -12,6 +12,7 @@
 @import url('./hero.css');
 @import url('./about.css');
 @import url('./menu.css');
+@import url('./faq.css');
 
 :root {
   font-family: 'Nunito', Inter, Avenir, Helvetica, Arial, sans-serif;
