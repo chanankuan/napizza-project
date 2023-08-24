@@ -1,0 +1,79 @@
+.menu .card-item {
+  position: relative;
+  border: 1px solid var(--primary-light-bg);
+}
+
+.menu .card-item {
+  box-shadow: var(--hover-box-shadow);
+  transform: scale(1.01);
+}
+
+.card-price {
+  font-size: 12px;
+  color: var(--white);
+  padding: 4px 8px;
+  background-color: var(--black);
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+}
+
+.card-price span {
+  font-size: 18px;
+}
+
+.menu__box .btn-group {
+  display: flex;
+  gap: 2rem;
+}
+
+.menu__box .btn-group .size-btn {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  width: 50%;
+  padding: 1rem;
+  background-color: transparent;
+  border: 1px solid var(--light-color);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.menu__box .btn-group .size-btn.active {
+  color: var(--white);
+  background-color: var(--light-color);
+}
+
+.menu__box .add-to-cart-btn {
+  width: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 3rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  color: var(--white);
+  line-height: 130%;
+  text-transform: capitalize;
+  background-color: var(--red);
+  cursor: pointer;
+  transition: var(--tran-02);
+}
+
+.menu__box .add-to-cart-btn:hover {
+  background-color: var(--black);
+  transition: var(--tran-02);
+}
+
+.menu__box-heading {
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: var(--black);
+  margin-bottom: 1.5rem;
+}
+
+.menu__box-ingredients {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
