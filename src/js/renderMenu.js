@@ -1,4 +1,5 @@
 import { pizzaList } from '../data/pizzaAssort';
+import imagePath from '../img/pizza-1.png';
 
 const pickSize = (id, size, price) => {
   const pickSizeBtns = document.querySelectorAll('.card-btn-group');
@@ -31,13 +32,12 @@ const renderMenu = () => {
       image,
       ingredients,
     } = pizza;
-    const path = import.meta.env.BASE_URL + image;
     let currentPrice = standard;
 
     newLi.classList.add('card-item');
     newLi.innerHTML = `
       <div class="card-price"><span>${currentPrice}</span> UAH</div>
-        <img class="card-image" src="${path + image}" alt="${name}">
+        <img class="card-image" src="${imagePath}" alt="${name}">
         <h3 class="card-title">${name}</h3>
         <p class="card-text">${ingredients.join(', ')}</p>
         <div class="card-btn-group btn-group-${id}">
