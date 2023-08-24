@@ -1,5 +1,31 @@
 import { pizzaList } from '../data/pizzaAssort';
-import imagePath from '../img/pizza-1.png';
+import pizza1 from '../img/pizza-1.png';
+import pizza2 from '../img/pizza-2.png';
+import pizza3 from '../img/pizza-3.png';
+import pizza4 from '../img/pizza-4.png';
+import pizza5 from '../img/pizza-5.png';
+import pizza6 from '../img/pizza-6.png';
+import pizza7 from '../img/pizza-7.png';
+import pizza8 from '../img/pizza-8.png';
+import pizza9 from '../img/pizza-9.png';
+import pizza10 from '../img/pizza-10.png';
+import pizza11 from '../img/pizza-11.png';
+import pizza12 from '../img/pizza-12.png';
+
+const images = [
+  pizza1,
+  pizza2,
+  pizza3,
+  pizza4,
+  pizza5,
+  pizza6,
+  pizza7,
+  pizza8,
+  pizza9,
+  pizza10,
+  pizza11,
+  pizza12,
+];
 
 const pickSize = (id, size, price) => {
   const pickSizeBtns = document.querySelectorAll('.card-btn-group');
@@ -29,7 +55,6 @@ const renderMenu = () => {
       id,
       name,
       price: { standard, large },
-      image,
       ingredients,
     } = pizza;
     let currentPrice = standard;
@@ -37,7 +62,7 @@ const renderMenu = () => {
     newLi.classList.add('card-item');
     newLi.innerHTML = `
       <div class="card-price"><span>${currentPrice}</span> UAH</div>
-        <img class="card-image" src="${imagePath}" alt="${name}">
+        <img class="card-image" src="${images[id - 1]}" alt="${name}">
         <h3 class="card-title">${name}</h3>
         <p class="card-text">${ingredients.join(', ')}</p>
         <div class="card-btn-group btn-group-${id}">
