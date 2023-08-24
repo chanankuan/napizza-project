@@ -1,9 +1,10 @@
 .menu .card-item {
   position: relative;
   border: 1px solid var(--primary-light-bg);
+  transition: transform var(tran-250);
 }
 
-.menu .card-item {
+.menu .card-item:hover {
   box-shadow: var(--hover-box-shadow);
   transform: scale(1.01);
 }
@@ -23,16 +24,15 @@
   font-size: 18px;
 }
 
-.menu__box .btn-group {
-  display: flex;
-  gap: 2rem;
+.card-title {
+  font-size: 20px;
 }
 
-.menu__box .btn-group .size-btn {
+.card-btn-group .size-btn {
   font-size: 1.5rem;
   color: var(--light-color);
   width: 50%;
-  padding: 1rem;
+  padding: 6px;
   background-color: transparent;
   border: 1px solid var(--light-color);
   border-radius: 0.5rem;
