@@ -4,14 +4,24 @@
 
     <ul class="card-list">
       <li class="card-item">
-        <img
+        <picture>
+          <source srcset="./img/About-1.jpg 1x, ./img/About-1@2x.jpg 2x" />
+          <img
+            class="card-image"
+            src="./img/about-1.jpg"
+            width="300"
+            height="300"
+            alt="A man is making pizza"
+          />
+        </picture>
+        <!-- <img
           class="card-image"
           srcset="./img/About-1.jpg 1x, ./img/About-1@2x.jpg 2x"
           src="./img/about-1.jpg"
           width="300"
           height="300"
           alt="A man is making pizza"
-        />
+        /> -->
         <h3 class="card-title">made with love</h3>
         <p class="card-text">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quae amet beatae magni
