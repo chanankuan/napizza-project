@@ -77,6 +77,13 @@
   margin-bottom: 50px;
 }
 
+.card-item {
+  padding: 16px;
+  text-align: center;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
 @media screen and (min-width: 576px) {
   .card-list {
     display: flex;
@@ -94,13 +101,6 @@
   .card-item {
     flex-basis: calc((100% - 2 * 24px) / 3);
   }
-}
-
-.card-item {
-  padding: 20px;
-  text-align: center;
-  background-color: var(--white);
-  border-radius: 10px;
 }
 
 .card-image {
