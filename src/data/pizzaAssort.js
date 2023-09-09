@@ -1,3 +1,16 @@
+import pizza1 from '../img/pizza-1.png';
+import pizza2 from '../img/pizza-2.png';
+import pizza3 from '../img/pizza-3.png';
+import pizza4 from '../img/pizza-4.png';
+import pizza5 from '../img/pizza-5.png';
+import pizza6 from '../img/pizza-6.png';
+import pizza7 from '../img/pizza-7.png';
+import pizza8 from '../img/pizza-8.png';
+import pizza9 from '../img/pizza-9.png';
+import pizza10 from '../img/pizza-10.png';
+import pizza11 from '../img/pizza-11.png';
+import pizza12 from '../img/pizza-12.png';
+
 export const pizzaList = [
   {
     id: 1,
@@ -6,7 +19,7 @@ export const pizzaList = [
       standard: 295,
       large: 342,
     },
-    image: 'pizza1',
+    imageURL: pizza1,
     ingredients: ['ingredient 1', 'ingredient 2', 'ingredient 3'],
   },
   {
@@ -16,7 +29,7 @@ export const pizzaList = [
       standard: 290,
       large: 338,
     },
-    image: 'pizza2',
+    imageURL: pizza2,
     ingredients: ['ingredient 1', 'ingredient 2', 'ingredient 3'],
   },
   {
@@ -26,7 +39,7 @@ export const pizzaList = [
       standard: 300,
       large: 345,
     },
-    image: 'pizza3',
+    imageURL: pizza3,
     ingredients: ['ingredient 1', 'ingredient 2', 'ingredient 3'],
   },
   {
@@ -36,7 +49,7 @@ export const pizzaList = [
       standard: 300,
       large: 343,
     },
-    image: 'pizza4',
+    imageURL: pizza4,
     ingredients: ['ingredient 1', 'ingredient 2', 'ingredient 3'],
   },
   {
@@ -46,7 +59,7 @@ export const pizzaList = [
       standard: 231,
       large: 274,
     },
-    image: 'pizza5',
+    imageURL: pizza5,
     ingredients: ['ingredient 1', 'ingredient 2', 'ingredient 3'],
   },
   {
@@ -56,7 +69,7 @@ export const pizzaList = [
       standard: 231,
       large: 274,
     },
-    image: 'pizza6',
+    imageURL: pizza6,
     ingredients: ['ingredient 1', 'ingredient 2', 'ingredient 3'],
   },
   {
@@ -66,7 +79,7 @@ export const pizzaList = [
       standard: 266,
       large: 316,
     },
-    image: 'pizza7',
+    imageURL: pizza7,
     ingredients: ['ingredient 1', 'ingredient 2', 'ingredient 3'],
   },
   {
@@ -76,7 +89,7 @@ export const pizzaList = [
       standard: 286,
       large: 336,
     },
-    image: 'pizza8',
+    imageURL: pizza8,
     ingredients: ['ingredient 1', 'ingredient 2', 'ingredient 3'],
   },
   {
@@ -86,7 +99,7 @@ export const pizzaList = [
       standard: 296,
       large: 339,
     },
-    image: 'pizza9',
+    imageURL: pizza9,
     ingredients: ['ingredient 1', 'ingredient 2', 'ingredient 3'],
   },
   {
@@ -96,7 +109,7 @@ export const pizzaList = [
       standard: 268,
       large: 319,
     },
-    image: 'pizza10',
+    imageURL: pizza10,
     ingredients: ['ingredient 1', 'ingredient 2', 'ingredient 3'],
   },
   {
@@ -106,7 +119,7 @@ export const pizzaList = [
       standard: 290,
       large: 338,
     },
-    image: 'pizza11',
+    imageURL: pizza11,
     ingredients: ['ingredient 1', 'ingredient 2', 'ingredient 3'],
   },
   {
@@ -116,7 +129,7 @@ export const pizzaList = [
       standard: 279,
       large: 323,
     },
-    image: 'pizza12',
+    imageURL: pizza12,
     ingredients: ['ingredient 1', 'ingredient 2', 'ingredient 3'],
   },
 ];
