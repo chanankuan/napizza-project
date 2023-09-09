@@ -5,15 +5,15 @@
   transition: transform var(--tran-250);
 }
 
-.menu .card-item:hover {
+.menu .card-item:is(:hover, :focus) {
   box-shadow: var(--hover-box-shadow);
   transform: scale(1.01);
 }
 
 .menu .card-price {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--white);
-  padding: 4px 8px;
+  padding: 8px 12px;
   background-color: var(--black);
   border-radius: 0.5rem;
   position: absolute;
@@ -22,7 +22,11 @@
 }
 
 .menu .card-price span {
-  font-size: 18px;
+  font-size: 20px;
+}
+
+.menu .card-image {
+  width: 100%;
 }
 
 .menu .card-title {
@@ -74,24 +78,12 @@
   transition: background-color var(--tran-250);
 }
 
-.add-to-cart-btn:hover {
+.add-to-cart-btn:is(:hover, :focus) {
   background-color: var(--black);
 }
 
-
-
-
-
-.menu__box .btn-group .size-btn.active {
-  color: var(--white);
-  background-color: var(--light-color);
-}
-
-
-.menu__box-heading {
-  font-weight: 700;
-  font-size: 2rem;
-  text-transform: capitalize;
-  color: var(--black);
-  margin-bottom: 1.5rem;
+@media only screen and (min-width: 768px) {
+  .menu .card-item {
+    margin-bottom: 0;
+  }
 }
