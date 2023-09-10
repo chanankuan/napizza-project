@@ -4,7 +4,7 @@
 }
 
 .home-bg {
-  background: url("../img/home-bg.jpeg") no-repeat;
+  background: url('../img/home-bg.jpeg') no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -81,7 +81,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
   }
 }
 
@@ -94,13 +93,13 @@
 /* KEYFRAMES */
 @keyframes fadeRight {
   0% {
-    transform: translateX(-5rem);
+    transform: translateX(-5%);
   }
 }
 
 @keyframes fadeLeft {
   0% {
-    transform: translateX(5rem);
+    transform: translateX(5%);
   }
 }
 
