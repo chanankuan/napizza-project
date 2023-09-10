@@ -1,9 +1,9 @@
 import { pizzaList } from '../data/pizzaAssort';
 
-const list = document.querySelector('.menu-card-list');
+const list = document.querySelector('.js-menu-list');
 
 // Create markup of our menu and render it in DOM.
-(function renderMenu() {
+const renderMenu = () => {
   const markup = pizzaList
     .map(item => {
       const {
@@ -49,11 +49,11 @@ const list = document.querySelector('.menu-card-list');
     .join('');
 
   list.insertAdjacentHTML('beforeend', markup);
-})();
+};
 
-list.addEventListener('click', handleSizeChange);
+renderMenu();
 
-function handleSizeChange(event) {
+const handleSizeChange = event => {
   const target = event.target;
   if (target.nodeName !== 'BUTTON') {
     return;
@@ -74,4 +74,6 @@ function handleSizeChange(event) {
     btns[0].classList.remove('active');
     btns[1].classList.add('active');
   }
-}
+};
+
+list.addEventListener('click', handleSizeChange);

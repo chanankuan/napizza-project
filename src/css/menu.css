@@ -1,8 +1,11 @@
 .menu .card-item {
   position: relative;
   border: 1px solid var(--primary-light-bg);
-  margin-bottom: 24px;
   transition: transform var(--tran-250);
+}
+
+.menu .card-item:not(:last-child) {
+  margin-bottom: 24px;
 }
 
 .menu .card-item:is(:hover, :focus) {

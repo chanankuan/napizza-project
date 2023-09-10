@@ -63,11 +63,11 @@
   transform: translate(-50%, -50%);
 }
 
-.swiper-slide-content button:hover {
+.swiper-slide-content button:is(:hover, :focus) {
   background-color: var(--primary-red);
 }
 
-.swiper-slide-content button:hover .chevron-icon {
+.swiper-slide-content button:is(:hover, :focus) .chevron-icon {
   fill: var(--white);
 }
 

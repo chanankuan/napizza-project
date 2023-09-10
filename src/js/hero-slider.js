@@ -1,7 +1,6 @@
 import { pizzaList } from '../data/pizzaAssort';
 
 const ulElement = document.querySelector('.js-swiper');
-const slides = document.querySelectorAll('.js-swiper-slide');
 let interval;
 
 const renderSlider = () => {
@@ -62,7 +61,9 @@ const changeSlide = event => {
 };
 
 const prev = () => {
+  const slides = document.querySelectorAll('.js-swiper-slide');
   let lastIndex = slides.length - 1;
+
   for (let i = 0; i < slides.length; i++) {
     if (slides[i].classList.contains('active')) {
       slides[i].classList.remove('active');
@@ -78,7 +79,9 @@ const prev = () => {
 };
 
 const next = () => {
+  const slides = document.querySelectorAll('.js-swiper-slide');
   let lastIndex = slides.length - 1;
+
   for (let i = 0; i < slides.length; i++) {
     if (slides[i].classList.contains('active')) {
       slides[i].classList.remove('active');

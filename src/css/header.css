@@ -16,8 +16,10 @@
 }
 
 .header-logo {
+  display: inline-flex;
   font-size: 20px;
   color: var(--primary-red);
+  padding: 20px 0;
 }
 
 .mob-col-1 {
@@ -30,7 +32,7 @@
   flex: 1 0 auto;
   display: flex;
   justify-content: center;
-  padding: 20px 0;
+  /* padding: 20px 0; */
 }
 
 .mob-col-3 {
@@ -51,7 +53,7 @@
   transition: fill var(--tran-250);
 }
 
-.header .icon:hover {
+.header .icon:is(:hover, :focus) {
   fill: var(--primary-hover-color);
 }
 
@@ -77,9 +79,6 @@
 }
 
 .header-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   float: none;
   width: -moz-fit-content;
   width: fit-content;
@@ -177,7 +176,7 @@
   transition: var(--tran-02);
 }
 
-.cart .close-cart button:hover {
+.cart .close-cart button:is(:hover, :focus) {
   color: var(--black);
 }
 
@@ -254,7 +253,7 @@
   transition: var(--tran-02);
 }
 
-.cart #order-now-btn:hover {
+.cart #order-now-btn:is(:hover, :focus) {
   background-color: var(--black);
 }
 
@@ -336,7 +335,7 @@
   }
 
   .header-nav-link {
-    padding: 4px 14px;
+    padding: 20px 14px;
     font-size: 18px;
   }
 
@@ -349,7 +348,7 @@
     cursor: pointer;
   }
 
-  .nav-item:hover {
+  .nav-item:is(:hover, :focus) {
     color: var(--red);
     text-decoration: underline;
   }
@@ -375,7 +374,7 @@
     color: var(--light-color);
   }
 
-  .header__icons i:hover {
+  .header__icons i:is(:hover, :focus) {
     color: var(--red);
     transition: var(--tran-02);
   }

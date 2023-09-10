@@ -5,20 +5,23 @@
 }
 
 .accordion-content {
-  margin: 1.5rem 0;
+  margin: 16px 0;
   box-shadow: var(--box-shadow);
-  transition: var(--tran-02);
+  transition: var(--tran-250);
 }
 
 .accordion-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 16px;
   color: var(--white);
   padding: 16px;
   background-color: var(--black);
   cursor: pointer;
+}
+
+.accordion-title h3 {
+  font-size: 16px;
 }
 
 .accordion .chevron-icon {
@@ -30,23 +33,26 @@
   line-height: 2;
   color: var(--primary-light-color);
   height: 0;
-  padding: 0 10px;
+  padding: 0 16px;
   overflow: hidden;
   background-color: var(--white);
   box-sizing: content-box;
-  transition: height var(--tran-400);
+  transition: height var(--tran-400), padding var(--tran-400);
+}
+
+.accordion-content .chevron-icon {
+  transition: transform var(--tran-400);
 }
 
 .accordion-content.open .accordion-list {
-  padding: 10px;
+  padding: 16px;
   height: 100px;
 }
 
-.accordion .accordion-content.open .chevron-icon {
-  transform: rotate(180deg);
+.accordion-content.open .chevron-icon {
+  transform: rotate(-180deg);
 }
 
 .accordion-content.open .accordion-title {
   background-color: var(--primary-red);
-  transition: var(--tran-02);
 }
