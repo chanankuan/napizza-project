@@ -7,6 +7,7 @@
 @import url('./faq.css');
 @import url('./to-top.css');
 @import url('./footer.css');
+@import url('./cart.css');
 
 /* Import fonts */
 /* regular font */
@@ -118,7 +119,7 @@
   --primary-light-color: #666;
   --black: #333;
   --white: #fff;
-  --border-light-grey: rgb(16, 16, 16);
+  --border-light-grey: rgb(227, 227, 227);
   --border: 0.1rem solid var(--light-color);
   --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   --hover-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
