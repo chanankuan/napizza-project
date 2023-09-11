@@ -1,0 +1,49 @@
+/* ===== Custom quantity button ===== */
+.quantity-container {
+  display: flex;
+  border-radius: 10px;
+  background-color: rgb(228, 228, 228);
+}
+
+.quantity-input {
+  text-align: center;
+  font-size: 16px;
+  line-height: 100%;
+  padding: 12px;
+  background-color: rgb(228, 228, 228);
+  color: var(--black);
+}
+
+.quantity-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--black);
+  padding: 0;
+}
+
+.js-decrement-button {
+  padding-left: 12px;
+}
+
+.js-increment-button {
+  padding-right: 12px;
+}
+
+/* .quantity-button {
+  transform: translateY(0.2rem);
+} */
+
+.custom-input #decrement,
+.custom-input #decrement1,
+.custom-input #decrement2 {
+  padding: 1rem 0.2rem 1rem 1.5rem;
+  border-radius: 0 1.5rem 1.5rem 0;
+}
+
+.custom-input #increment,
+.custom-input #increment1,
+.custom-input #increment2 {
+  padding: 1rem 1.5rem 0.5rem 0.2rem;
+  border-radius: 0 1.5rem 1.5rem 0;
+}
