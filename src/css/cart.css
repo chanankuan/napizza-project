@@ -1,0 +1,143 @@
+@import url('./quantity-input.css');
+
+.cart {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100vh;
+  width: 400px;
+  background-color: var(--white);
+  padding: 20px;
+  box-sizing: border-box;
+  border-left: 1px solid var(--border-light-grey);
+  box-shadow: var(--box-shadow);
+  transition: right var(--tran-400);
+  overflow: auto;
+}
+
+.cart.active {
+  right: 0;
+}
+
+.cart > .wrapper {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 30px;
+}
+
+button[data-cart-close] {
+  font-size: 24px;
+  color: var(--primary-red);
+  text-decoration: underline;
+  text-align: right;
+  transition: var(--tran-250);
+}
+
+button[data-cart-close]:hover {
+  color: var(--black);
+}
+
+.cart-list {
+  padding-bottom: 20px;
+}
+
+.cart-item {
+  display: flex;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--border-light-grey);
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.cart .cart-item .delete-item-btn {
+  position: absolute;
+  right: 0;
+  color: var(--primary-red);
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.cart .cart-item__image {
+  display: flex;
+  align-items: center;
+  min-width: 80px;
+  margin-right: 10px;
+}
+.cart .cart-item__image img {
+  width: 80px;
+  height: 80px;
+}
+.cart .cart-item__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+.cart .cart-item__content .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.cart .cart-item__content form {
+  display: flex;
+}
+.cart #order-now-btn {
+  font-size: 2rem;
+  color: var(--white);
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 1rem 3rem;
+  margin-top: 2rem;
+  background-color: var(--red);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: var(--tran-02);
+}
+.cart #order-now-btn:hover {
+  background-color: var(--black);
+}
+.cart .cart-is-empty {
+  text-align: center;
+  font-size: 3rem;
+  margin: 5rem 0;
+}
+.cart .subtotal {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-item__name {
+  font-size: 20px;
+  padding-right: 20px;
+  text-transform: capitalize;
+  margin-bottom: 12px;
+}
+
+.cart-item__size {
+  font-size: 16px;
+  text-transform: capitalize;
+  margin-bottom: 12px;
+}
+
+.cart-item__ingredients {
+  font-size: 14px;
+  text-transform: capitalize;
+  margin-bottom: 12px;
+}
+
+.cart-item__price {
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.show-subtotal {
+  font-weight: 700;
+  color: red;
+}
