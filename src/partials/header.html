@@ -1,105 +1,87 @@
-<header class="header">
-  <div class="header-container">
-    <div class="mob-col-1">
-      <button
-        type="button"
-        class="js-toggle-menu hamburger-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
-        <div class="bar"></div>
-      </button>
-    </div>
+<div class="header-container">
+  <div class="mob-col-1">
+    <button
+      type="button"
+      class="js-toggle-menu hamburger-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <div class="bar"></div>
+    </button>
+  </div>
 
-    <div class="mob-col-2">
-      <a href="/index.html" class="header-logo">naPizza.</a>
-    </div>
+  <div class="mob-col-2">
+    <a href="/index.html" class="header-logo">naPizza.</a>
+  </div>
 
-    <div class="header-nav-container mobile-nav js-menu-container">
-      <nav class="header-nav js-navbar">
-        <ul class="header-nav-list list">
-          <li class="header-nav-item item">
-            <a class="header-nav-link link" href="javascript:void(0)" id="home" data-section="home"
-              >home</a
-            >
-          </li>
-          <li class="header-nav-item item">
-            <a
-              class="header-nav-link link"
-              href="javascript:void(0)"
-              id="about-btn"
-              data-section="about"
-              >about</a
-            >
-          </li>
-          <li class="header-nav-item item">
-            <a
-              class="header-nav-link link"
-              href="javascript:void(0)"
-              id="menu-btn"
-              data-section="menu"
-              >menu</a
-            >
-          </li>
-          <li class="header-nav-item item">
-            <a
-              class="header-nav-link link"
-              href="javascript:void(0)"
-              id="order-btn"
-              data-section="design-pizza"
-              >design pizza</a
-            >
-          </li>
-          <li class="header-nav-item item">
-            <a
-              class="header-nav-link link"
-              href="javascript:void(0)"
-              id="faq-btn"
-              data-section="faq"
-              >faq</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </div>
-
-    <div class="mob-col-3">
-      <ul class="header-icon-list list">
-        <li class="header-icon-item item">
-          <button class="button">
-            <svg class="user-login-icon icon" width="20" height="20">
-              <use href="./img/symbol-defs.svg#user"></use>
-            </svg>
-          </button>
+  <div class="header-nav-container mobile-nav js-menu-container">
+    <nav class="header-nav js-navbar">
+      <ul class="header-nav-list list">
+        <li class="header-nav-item item">
+          <a class="header-nav-link link" href="javascript:void(0)" id="home" data-section="home"
+            >home</a
+          >
         </li>
-        <li class="header-icon-item item">
-          <button class="button">
-            <svg class="box-icon icon" width="20" height="20">
-              <use href="./img/symbol-defs.svg#box"></use>
-            </svg>
-          </button>
+        <li class="header-nav-item item">
+          <a
+            class="header-nav-link link"
+            href="javascript:void(0)"
+            id="about-btn"
+            data-section="about"
+            >about</a
+          >
         </li>
-        <li class="header-icon-item item">
-          <button class="button" id="open-cart-btn">
-            <svg class="shopping-cart-icon icon" width="20" height="20">
-              <use href="./img/symbol-defs.svg#cart-shopping"></use>
-            </svg>
-            <span class="quantity"></span>
-          </button>
+        <li class="header-nav-item item">
+          <a
+            class="header-nav-link link"
+            href="javascript:void(0)"
+            id="menu-btn"
+            data-section="menu"
+            >menu</a
+          >
+        </li>
+        <li class="header-nav-item item">
+          <a
+            class="header-nav-link link"
+            href="javascript:void(0)"
+            id="order-btn"
+            data-section="design-pizza"
+            >design pizza</a
+          >
+        </li>
+        <li class="header-nav-item item">
+          <a class="header-nav-link link" href="javascript:void(0)" id="faq-btn" data-section="faq"
+            >faq</a
+          >
         </li>
       </ul>
-    </div>
+    </nav>
   </div>
 
-  <div class="cart" id="cart">
-    <div class="close-cart">
-      <button id="close-cart-btn">close</button>
-    </div>
-    <div class="cart-is-empty"></div>
-    <div class="cart-list">
-      <!-- dynamic data here -->
-    </div>
-    <div class="subtotal">Total: <span class="show-subtotal"></span></div>
-    <a href="./complete-order.html" id="order-now-btn">Order Now</a>
+  <div class="mob-col-3">
+    <ul class="header-icon-list list">
+      <li class="header-icon-item item">
+        <button class="button">
+          <svg class="user-login-icon icon" width="20" height="20">
+            <use href="./img/symbol-defs.svg#user"></use>
+          </svg>
+        </button>
+      </li>
+      <li class="header-icon-item item">
+        <button class="button">
+          <svg class="box-icon icon" width="20" height="20">
+            <use href="./img/symbol-defs.svg#box"></use>
+          </svg>
+        </button>
+      </li>
+      <li class="header-icon-item item">
+        <button type="button" class="button" data-cart-open>
+          <svg class="shopping-cart-icon icon" width="20" height="20">
+            <use href="./img/symbol-defs.svg#cart-shopping"></use>
+          </svg>
+          <span class="quantity"></span>
+        </button>
+      </li>
+    </ul>
   </div>
-</header>
+</div>
