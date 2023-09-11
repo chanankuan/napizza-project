@@ -1,25 +1,22 @@
-(() => {
-  const mobileMenu = document.querySelector('.js-menu-container');
-  const toggleMenuBtn = document.querySelector('.js-toggle-menu');
-  const body = document.body;
+import { closeMenu } from './navScroll';
 
-  const toggleMenu = () => {
-    const isMenuOpen = toggleMenuBtn.getAttribute('aria-expanded') === 'true' || false;
-    toggleMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
-    mobileMenu.classList.toggle('is-open');
-    toggleMenuBtn.classList.toggle('is-open');
-    body.classList.toggle('scroll-hidden');
-  };
+const mobileMenu = document.querySelector('.js-menu-container');
+const toggleMenuBtn = document.querySelector('.js-toggle-menu');
+const body = document.body;
 
-  toggleMenuBtn.addEventListener('click', toggleMenu);
+const toggleMenu = () => {
+  const isMenuOpen = toggleMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+  toggleMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+  mobileMenu.classList.toggle('is-open');
+  toggleMenuBtn.classList.toggle('is-open');
+  body.classList.toggle('scroll-hidden');
+};
 
-  // Close the mobile menu on wider screens if the device orientation changes
-  window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
-    if (!e.matches || !mobileMenu.classList.contains('is-open')) return;
+toggleMenuBtn.addEventListener('click', toggleMenu);
 
-    mobileMenu.classList.remove('is-open');
-    toggleMenuBtn.classList.remove('is-open');
-    toggleMenuBtn.setAttribute('aria-expanded', false);
-    body.classList.remove('scroll-hidden');
-  });
-})();
+// Close the mobile menu on wider screens if the device orientation changes
+window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+  if (!e.matches || !mobileMenu.classList.contains('is-open')) return;
+
+  closeMenu();
+});
