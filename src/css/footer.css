@@ -39,3 +39,17 @@
 .footer__box-container {
   align-items: stretch;
 }
+
+@media only screen and (min-width: 575px) {
+  .contact-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-list {
+    flex-wrap: nowrap;
+  }
+}
