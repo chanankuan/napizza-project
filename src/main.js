@@ -4,3 +4,4 @@ import './js/renderMenu';
 import './js/accordion';
 import './js/scrollTop';
 import './js/navScroll';
+import './js/cart';
