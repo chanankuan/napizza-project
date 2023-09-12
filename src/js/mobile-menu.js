@@ -1,4 +1,4 @@
-import { closeMenu } from './navScroll';
+import { closeNavMenu as closeMenu } from './closeNavMenu';
 
 const mobileMenu = document.querySelector('.js-menu-container');
 const toggleMenuBtn = document.querySelector('.js-toggle-menu');
@@ -10,6 +10,10 @@ const toggleMenu = () => {
   mobileMenu.classList.toggle('is-open');
   toggleMenuBtn.classList.toggle('is-open');
   body.classList.toggle('scroll-hidden');
+
+  if (!isMenuOpen) {
+    window.addEventListener('keydown', handleClose);
+  }
 };
 
 toggleMenuBtn.addEventListener('click', toggleMenu);
@@ -20,3 +24,10 @@ window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
 
   closeMenu();
 });
+
+const handleClose = event => {
+  if (event.key === 'Escape') {
+    closeMenu();
+    window.removeEventListener('keydown', handleClose);
+  }
+};

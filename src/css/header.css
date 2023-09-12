@@ -17,7 +17,7 @@
 
 .header-logo {
   display: inline-flex;
-  font-size: 20px;
+  font-size: 24px;
   color: var(--primary-red);
   padding: 20px 0;
 }

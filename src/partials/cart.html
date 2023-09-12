@@ -35,7 +35,40 @@
         </div>
       </div>
     </div>
+
+    <div class="cart-item">
+      <button class="delete-item-btn">
+        <svg class="icon" width="20" height="20">
+          <use href="./img/symbol-defs.svg#trash-can"></use>
+        </svg>
+      </button>
+      <div class="cart-item__image">
+        <img src="../img/pizza-10.png" alt="" />
+      </div>
+      <div class="cart-item__content">
+        <p class="cart-item__name">Homemade Pepperoni Pizza</p>
+        <p class="cart-item__size">Standard</p>
+        <p class="cart-item__ingredients">Ingredient 1, Ingredient 2, Ingredient 3</p>
+        <div class="wrapper">
+          <div class="quantity-container">
+            <button class="quantity-button js-decrement-button">
+              <svg class="icon" width="14" height="14">
+                <use href="./img/symbol-defs.svg#minus"></use>
+              </svg>
+            </button>
+            <span class="quantity-input">1</span>
+            <button class="quantity-button js-increment-button">
+              <svg class="icon" width="14" height="14">
+                <use href="./img/symbol-defs.svg#plus"></use>
+              </svg>
+            </button>
+          </div>
+          <p class="cart-item__price">268 UAH</p>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="subtotal">Total: <span></span></div>
-  <a href="" id="order-now-btn">Order Now</a>
+  <div class="subtotal">Total: <span>536 UAH</span></div>
+  <a href="" class="order-now-btn" id="order-now-btn">Order Now</a>
 </div>
+<div class="cart-backdrop"></div>
