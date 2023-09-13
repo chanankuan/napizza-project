@@ -1,4 +1,5 @@
 import { pizzaList } from '../data/pizzaAssort';
+import linkToSprite from '../img/symbol-defs.svg';
 
 const ulElement = document.querySelector('.js-swiper');
 let interval;
@@ -24,12 +25,12 @@ const renderSlider = () => {
               <div class="button-wrapper">
                 <button class="swiper-button-prev js-swiper-button-prev js-onclick">
                   <svg class="chevron-icon icon js-onclick" width="20" height="20">
-                    <use class="js-onclick" href="./img/symbol-defs.svg#chevron-left"></use>
+                    <use class="js-onclick" href="${linkToSprite}#chevron-left"></use>
                   </svg>
                 </button>
                 <button class="swiper-button-next js-swiper-button-next js-onclick">
                   <svg class="chevron-icon icon js-onclick" width="20" height="20">
-                    <use class="js-onclick" href="./img/symbol-defs.svg#chevron-right"></use>
+                    <use class="js-onclick" href="${linkToSprite}#chevron-right"></use>
                   </svg>
                 </button>
               </div>
